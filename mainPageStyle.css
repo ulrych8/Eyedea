@@ -30,3 +30,20 @@ section
 {
   padding-top: 100px;
 }
+
+.underline
+{
+  border-bottom: 4px solid blue;
+}
+
+.radio
+{
+  font-size:12px;
+  color:blue;
+}
+
+.radio:checked
+{
+  font: bold;
+  text-decoration: underline;
+}
