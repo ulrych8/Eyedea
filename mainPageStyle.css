@@ -47,19 +47,26 @@
   justify-content: space-around;
 }
 
+#containerContentAndSideBar
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#content
+{
+  width:80%
+}
+
+aside
+{
+  width:18%
+}
+
 section
 {
   padding-top: 100px;
 }
 
-.content
-{
-  width:80%;
-  float:left;
-}
 
-aside
-{
-  width:18%;
-  float:right;
-}
