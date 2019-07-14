@@ -81,11 +81,11 @@ section
 #postIdeaLabel
 {
   color: white;
-  background-color: blue;
-  border-top: 10px blue;
-  border-bottom: 10px blue;
-  border-right: 10px blue;
-  border-radius: 0px 0px 10px 10px;
+  background-color: #080042;
+  border-top: 10px #080042;
+  border-bottom: 10px #080042;
+  border-right: 10px #080042;
+  border-radius: 0px 10px 10px 0px;
   height: 90px;
   vertical-align: middle;
 }
