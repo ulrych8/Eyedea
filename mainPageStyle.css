@@ -1,3 +1,8 @@
+*
+{
+  background-color: gray;
+}
+
 #FixedHeader
 {
   position: fixed;
@@ -32,9 +37,10 @@
 
 #containerSectionHeader
 {
+  position: fixed; 
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 30px;
   justify-content: space-around;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -49,6 +55,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
 
 #containerContentAndSideBar
 {
@@ -72,11 +79,55 @@
 aside
 {
   width:18%
+  display: block;
 }
 
 section
 {
   padding-top: 100px;
+}
+
+/*#containerSideMenu input
+{
+  font-weight: bold;
+  background : yellow;
+}*/
+
+.theme {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 220, 0, 1);
+  background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.theme:hover {
+  background-color: rgba(255, 255, 0, 1);
+}
+
+.theme:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+img:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 0, 0.67);
+  -moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 0, 0.67);
+  box-shadow:         0px 0px 30px 0px rgba(255, 255, 0, 0.67);
 }
 
 #postIdeaLabel
