@@ -78,4 +78,11 @@ section
   padding-top: 100px;
 }
 
-
+#postIdeaLabel
+{
+  font-color: blue;
+  border-top: 10px blue;
+  border-bottom: 10px blue;
+  border-right: 10px blue;
+  border-radius: 0px 0px 10px 10px;
+}
