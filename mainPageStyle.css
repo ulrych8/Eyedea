@@ -44,3 +44,15 @@ section
 {
   padding-top: 100px;
 }
+
+.content
+{
+  width:80%;
+  float:left;
+}
+
+aside
+{
+  width:18%;
+  float:right;
+}
