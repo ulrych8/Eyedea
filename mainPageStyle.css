@@ -80,7 +80,8 @@ section
 
 #postIdeaLabel
 {
-  color: blue;
+  color: white;
+  background-color: blue;
   border-top: 10px blue;
   border-bottom: 10px blue;
   border-right: 10px blue;
