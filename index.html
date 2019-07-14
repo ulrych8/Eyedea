@@ -1,143 +1,112 @@
-*
-{
-  background-color: gray;
-}
-
-#FixedHeader
-{
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  background-color: white;
-  border-bottom: 10px black solid;
-}
-
-#containerFixedHeader
-{
-  display: flex;
-  justify-content: space-around;
-}
-
-#containerLeftFixedHeader
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-#containerRightFixedHeader
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-#containerSectionHeader
-{
-  position: fixed; 
-  display: flex;
-  width: 100%;
-  height: 30px;
-  justify-content: space-around;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-radius: 1px 1px 20px 20px;
-}
-
-#containerSideMenu
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-
-#containerContentAndSideBar
-{
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#containerFooter
-{
-  display: flex;
-  flex-direction: row;
-}
-
-#content
-{
-  width:80%
-}
-
-aside
-{
-  width:18%
-  display: block;
-}
-
-section
-{
-  padding-top: 100px;
-}
-
-/*#containerSideMenu input
-{
-  font-weight: bold;
-  background : yellow;
-}*/
-
-.theme {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color: rgba(220, 220, 0, 1);
-  background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.theme:hover {
-  background-color: rgba(255, 255, 0, 1);
-}
-
-.theme:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-img:hover {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 0, 0.67);
-  -moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 0, 0.67);
-  box-shadow:         0px 0px 30px 0px rgba(255, 255, 0, 0.67);
-}
-
-#postIdeaLabel
-{
-  color: white;
-  background-color: #080042;
-  border-top: 10px #080042;
-  border-bottom: 10px #080042;
-  border-right: 10px #080042;
-  border-radius: 0px 10px 10px 0px;
-  height: 90px;
-  vertical-align: middle;
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page head-->
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="mainPageStyle.css" />
+		<!-- <link rel="stylesheet" media="screen and(max-width: 1280px)" href="smallstyle.css" /> -->
+		<title>Eyedea</title>
+	</head>
+	
+	<body>
+	
+		<header id="FixedHeader"> <!-- Main header that remains on top -->
+			<div id="containerFixedHeader">
+				<div id="containerLeftFixedHeader">
+					<a href="index.html"><img src="EyedeaSecondLogo.png" width="85" height="100" title="Logo" alt="logo" id="mainLogo"></a>
+					<input type="image" src="plusIcon.png" width="90" height="90" name="postIdeaButton" id="postIdeaButton" />
+					<label for="postIdeaButton" id="postIdeaLabel">Post your idea...</label><br />
+				</div>
+				<div id="containerRightFixedHeader">
+					<input type="image" src="searchLogo.png" width="90" height="90" name="searchButton" id="searchButton" /><br />
+					<input type="image" src="defaultNotification.png" width="90" height="90" name="notificationButton" id="notificationButton" /><br />
+					<input type="image" src="defaultUser.png" width="90" height="90" name="accountButton" id="accountButton" /><br />
+				</div>
+			</div>
+		</header>
+		
+		<section> <!-- Main content -->
+			<header> <!-- Header non-static -->
+				<div id="containerSectionHeader"> <!-- do checkboxes with option here -->
+					<input type="radio" name="sorting" value="topIdeasButton" id="topIdeasButton" /><label for="topIdeasButton" id="topIdeasLabel" >Top Ideas</label><br />
+					<input type="radio" name="sorting" value="latestButton" id="latestButton" /><label for="latestButton" id="latestLabel" >Latest</label><br />
+					<input type="radio" name="sorting" value="itsHapenningButton" id="itsHapenningButton" /><label for="itsHappeningButton" id="itsHapenningLabel" >It's happening !</label><br />
+					
+					<input type="radio" value="dailyButton" name="dateSorting" id="dailyButton" /><label for="dailyButton" id="dailyLabel" >Daily</label><br />
+					<input type="radio" value="weeklyButton" name="dateSorting" id="weeklyButton" /><label for="weeklyButton" id="weeklyLabel" >Weekly</label><br />
+					<input type="radio" value="monthlyButton" name="dateSorting" id="monthlyButton" /><label for="monthlyButton" id="monthlyLabel" >Monthly</label><br />
+					<input type="radio" value="yearlyButton" name="dateSorting" id="yearlyButton" /><label for="yearlyButton" id="yearlyLabel" >Yearly</label><br />
+					<input type="radio" value="allTimeButton" name="dateSorting" id="allTimeButton" /><label for="allTimeButton" id="allTimeLabel" >All Time</label><br />
+				</div>
+			</header>
+			<div id="containerContentAndSideBar">
+				<div id="content">  <!-- Block containing content -->
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+					<p>blabla ideas here</p>
+				</div>
+				<aside>	<!-- Side Menu -->
+					<div id=containerSideMenu><br/>
+						<input type="button" value="General" name="generalButton" id="generalButton" class="theme"/><br />
+						<input type="button" value="Health" name="healthButton" id="healthButton" class="theme"/><br />
+						<input type="button" value="Science" name="scienceButton" id="scienceButton" class="theme"/><br />
+						<input type="button" value="Technology" name="technologyButton" id="technologyButton" class="theme"/><br />
+						<input type="button" value="Scenario" name="scenarioButton" id="scenarioButton" class="theme"/><br />
+						<input type="button" value="Video Games" name="videoGamesButton" id="videoGamesButton" class="theme"/><br />
+						<input type="button" value="Start-Up" name="startUp" id="startUp" class="theme"/><br />
+						<input type="button" value="Category Settings Button" name="categorySettingsButton" id="categorySettingsButton" class="theme" /><br />
+					</div>
+				</aside>
+			</div>
+		</section>
+		
+		<footer> <!-- Footer containing general info -->
+			<div id="containerFooter">
+				<img src="EyedeaSecondLogo.png" width="85" height="100" title="Logo" alt="logo">
+				<p id="description">Description of Eyedea</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>
