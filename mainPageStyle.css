@@ -11,6 +11,17 @@
   display: flex;
 }
 
+#containerSectionHeader
+{
+  display: flex;
+}
+
+#containerSideMenu
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .section
 {
   padding-top: 100px;
