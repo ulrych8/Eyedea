@@ -16,12 +16,14 @@
 #containerLeftFixedHeader
 {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
 }
 
 #containerRightFixedHeader
 {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
