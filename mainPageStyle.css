@@ -13,6 +13,18 @@
   justify-content: space-around;
 }
 
+#containerLeftFixedHeader
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#containerRightFixedHeader
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
 #containerSectionHeader
 {
   display: flex;
