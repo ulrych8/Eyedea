@@ -7,6 +7,7 @@
   margin: 0px;
   padding: 0px;
   background-color: white;
+  border-bottom: 10px black solid;
 }
 
 #containerFixedHeader
