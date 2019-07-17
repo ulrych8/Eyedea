@@ -1,7 +1,11 @@
 *
 {
+  /*Dark theme*/
   background-color: #121212;
   color : white;
+  /*Light Theme*/
+  background-color: white;
+  color: black;
 }
 
 #FixedHeader
@@ -40,7 +44,7 @@
 {
   position: fixed; 
   display: flex;
-  width: 100%;
+  width: 99.3%; /*should be 100% but there is a bug*/
   height: 30px;
   justify-content: space-around;
   border-top: 2px solid black;
@@ -60,7 +64,7 @@
 
 #containerContentAndSideBar
 {
-  padding-top: 20px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,6 +78,7 @@
 
 #content
 {
+  padding-left: 2%;
   width:80%
   display: flex;
   flex-direction: column;
@@ -148,18 +153,28 @@ img:hover {
 
 .idea
 {
-  border: black 2px solid;
-  border-radius: 4px 4px 4px 4px;
-  height: 100px;
-  width: 75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: black solid 2px;
+  border-radius: 12px 12px 12px 12px;
+  height: 200px;
+  width: 100%; /*might be changed */
+  margin-bottom: 20px;
+}
+
+.containerIdea
+{
+  display: flex;
+  flex-direction: row;
 }
 
 .containerLeftColumnIdea
 {
   display: flex;
   flex-direction: column;
-  width: 50px;
-  height: 90px;
+  justify-content: space-around;
+  width: 100px;
+  height: 200px;
 }
 
 .containerRightColumnIdea
@@ -173,4 +188,5 @@ img:hover {
 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
