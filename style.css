@@ -75,6 +75,9 @@
 #content
 {
   width:80%
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 aside
@@ -141,4 +144,33 @@ img:hover {
   border-radius: 0px 10px 10px 0px;
   height: 90px;
   vertical-align: middle;
+}
+
+.idea
+{
+  border: black 2px solid;
+  border-radius: 4px 4px 4px 4px;
+  height: 100px;
+  width: 75%;
+}
+
+.containerLeftColumnIdea
+{
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 90px;
+}
+
+.containerRightColumnIdea
+{
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+}
+
+.containerVoteIdea
+{
+  display: flex;
+  flex-direction: row;
 }
